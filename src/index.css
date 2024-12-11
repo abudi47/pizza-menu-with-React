@@ -31,10 +31,16 @@ body {
   gap: 4.8rem;
 }
 
+.container h1{
+  color: #ec1b1b;
+
+}
+
 /* *************** */
 
 .header {
   align-self: stretch;
+
 }
 
 .header h1 {

@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Menu } from "./components/Menu";
 import "./index.css";
-
+// import sala from "./pizzas";
 const pizzaData = [
     {
       name: "Focaccia",
@@ -53,6 +53,7 @@ function App () {
     return (
         <div className="container">
             <h1>Holla {pizzaData[0].name}</h1>
+            <img src="./pizzas/spinaci.jpg" alt="fung" />
             <PizzaList />
             <Menu />
 

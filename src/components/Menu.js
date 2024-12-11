@@ -5,13 +5,14 @@ import { Footer } from './Footer'
 
 export const Menu = () => {
   return (
-    <div>  
+    <main className='menu'>  
         <Header />
+        <h2> Our menu</h2>
         <Pizza />
         <Pizza />
         <Pizza />
         <Footer />
 
-    </div>
+    </main>
   )
 }

@@ -13,7 +13,7 @@ export const Footer = () => {
     // }
   return (
     
-    <footer>
+    <footer className='footer'>
         
         <h5> {new Date().toLocaleTimeString()}.  we're cuureently open</h5>
 
