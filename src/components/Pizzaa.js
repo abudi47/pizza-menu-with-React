@@ -1,12 +1,19 @@
-import React from 'react';
-import focaccia from '../pizzas/focaccia.jpg';
-const Pizzaa = () => {
+import React from 'react'
+
+const Pizzaa = (props) => {
   return (
+    <div className='pizza'>
+    <img src={props.photo} alt={props.name}/ > 
     <div>
-        <img src={focaccia} alt="pizzaimg"/ > 
-        <h1>Pizza</h1>
-        
+        <h1>{props.name}</h1>
+        <p>{props.ingredients}</p>
+        <span>{props.price}</span>
     </div>
+     
+
+
+    
+</div>
   )
 }
 

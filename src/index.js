@@ -52,8 +52,12 @@ const pizzaData = [
 function App () {
     return (
         <div className="container">
-            <h1>Holla {pizzaData[0].name}</h1>
-            <img src="./pizzas/spinaci.jpg" alt="fung" />
+            
+             <div className="header">
+                <h1>Welcome </h1>
+
+
+             </div>
             <PizzaList />
             <Menu />
 
