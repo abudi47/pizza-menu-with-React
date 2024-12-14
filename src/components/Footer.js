@@ -1,22 +1,22 @@
 import React from 'react'
 
 export const Footer = () => {
-    // const hour = new Date().getHours();
-    // const openhr = 8
-    // const closedhr = 21;
+    const hour = new Date().getHours();
+    const openhr = 8
+    const closedhr = 21;
+    const date = new Date().toLocaleTimeString();
 
-    // if (hour >= openhr && hour <= closedhr ) {
-    //     alert ("we're currently opened")
-    // }
-    // else {
-    //     alert ("we are closed")
-    // }
+    const isOpen = hour >= openhr && hour <= closedhr ;
+
   return (
     
     <footer className='footer'>
-        
-        <h5> {new Date().toLocaleTimeString()}.  we're cuureently open</h5>
+        <div className='order'>
+        {isOpen && (  <p>we're currently opened , {date}</p>)}
+        <button className='btn'>Order Now
 
+        </button>
+        </div>
     </footer>
   )
 }
